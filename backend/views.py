@@ -1,4 +1,5 @@
 from django.core.files.storage import default_storage
+from rest_framework.renderers import JSONRenderer
 from rest_framework.views import APIView
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.response import Response
@@ -31,6 +32,8 @@ class FileUploadView(APIView):
             return Response(file_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
 class GetDataView(APIView):
+    renderer_classes = [JSONRenderer]
+    
     def get(self, request, *args, **kwargs):
         data = get_processed_data()
         return Response(data)
