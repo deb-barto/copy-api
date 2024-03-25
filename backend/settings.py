@@ -31,11 +31,11 @@ DEBUG = True
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
-    'https://wwww.copy-app-sigma.vercel.app/'
+    'https://copy-app-sigma.vercel.app/'
 )
 
 CORS_ALLOWED_ORIGINS = [
-    'https://wwww.copy-app-sigma.vercel.app/'
+    'https://copy-app-sigma.vercel.app/'
 ]
 
 CORS_ALLOW_METHODS = [
@@ -59,7 +59,7 @@ CORS_ALLOW_HEADERS = [
     "x-requested-with",
 ]
 
-ALLOWED_HOSTS = ['*', 'https://wwww.copy-app-sigma.vercel.app/']
+ALLOWED_HOSTS = ['https:/copy-app-sigma.vercel.app/']
 
 REST_FRAMEWORK ={
     'DEFAULT_PERMISSION_CLASSES':[  
