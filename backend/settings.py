@@ -59,7 +59,7 @@ CORS_ALLOW_HEADERS = [
     "x-requested-with",
 ]
 
-ALLOWED_HOSTS = ['*', '.vercel.app', 'http://localhost:5173/']
+ALLOWED_HOSTS = ['*', 'https://copy-app-sigma.vercel.app/']
 
 REST_FRAMEWORK ={
     'DEFAULT_PERMISSION_CLASSES':[  
