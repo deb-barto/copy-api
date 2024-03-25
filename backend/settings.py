@@ -36,7 +36,9 @@ CORS_ORIGIN_WHITELIST = (
 
 CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOWED_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://copy-app-sigma.vercel.app",
+]
 
 CORS_ALLOW_METHODS = [
     "DELETE",
