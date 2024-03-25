@@ -61,7 +61,7 @@ CORS_ALLOW_HEADERS = [
     "x-requested-with",
 ]
 
-ALLOWED_HOSTS = ['https:/copy-app-sigma.vercel.app/']
+ALLOWED_HOSTS = ['https://copy-api-git-deploy-hanabananaas-projects.vercel.app/']
 
 REST_FRAMEWORK ={
     'DEFAULT_PERMISSION_CLASSES':[  
