@@ -28,7 +28,11 @@ SECRET_KEY = 'django-insecure-ig41j6jz062vz8&hk^r332ts@g1ohl**)ef=g=a87!$sd&^rft
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ORIGIN_ALLOW_ALL = False
+
+CORS_ORIGIN_WHITELIST = (
+    'https://copy-app-sigma.vercel.app/'
+)
 
 CORS_ALLOWED_ORIGINS = [
     'https://copy-app-sigma.vercel.app/'
@@ -79,7 +83,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-     'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
