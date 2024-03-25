@@ -23,11 +23,11 @@
             "dest": "/static/$1"
         },
         {
-            "src": "/api/(.*)",
+            "src": "/(.*)",
             "dest": "backend/wsgi.py"
         },
         {
-            "src": "/(.*)",
+            "src": "/apis/(.*)",
             "headers": {
               "Access-Control-Allow-Origin": "https://seu-dominio-frontend.com",
               "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
