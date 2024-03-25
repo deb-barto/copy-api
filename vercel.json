@@ -27,9 +27,9 @@
             "dest": "backend/wsgi.py"
         },
         {
-            "src": "/apis/(.*)",
+            "src": "/(.*)",
             "headers": {
-              "Access-Control-Allow-Origin": "https://seu-dominio-frontend.com",
+              "Access-Control-Allow-Origin": "https://copy-app-sigma.vercel.app/",
               "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
               "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept, Authorization",
               "Access-Control-Allow-Credentials": "true"
